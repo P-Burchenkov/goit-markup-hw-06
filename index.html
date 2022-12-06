@@ -388,6 +388,23 @@
 
       <div class="backdrop is-hidden" data-modal>
         <div class="modal">
+          <p class="modal-title">Залиште свої дані, ми вам передзвонимо</p>
+          <form class="modal-holder">
+            <label for="name" class="input-description">Ім'я</label>
+            <input type="text" id="name" class="field" />
+            <label for="tel" class="input-description">Телефон</label>
+            <input type="tel" id="tel" class="field" />
+            <label for="email" class="input-description">Пошта</label>
+            <input type="email" id="email" class="field" />
+            <label for="comment" class="input-description">Коментар</label>
+            <textarea name="comment" id="comment" placeholder="Введіть текст"></textarea>
+
+            <label for="pact">
+              <input type="radio" name="pact" id="pact" />Погоджуюся з розсилкою та приймаю
+              <a href="">Умови договору</a>
+            </label>
+          </form>
+          <button type="submit" class="button">Відправити</button>
           <button class="close-button" data-modal-close>
             <svg class="close-button-icon" width="18" height="18">
               <use href="./images/icons.svg#icon-close"></use>
