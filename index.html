@@ -389,34 +389,41 @@
       <div class="backdrop is-hidden" data-modal>
         <div class="modal">
           <p class="modal-title">Залиште свої дані, ми вам передзвонимо</p>
-          <form class="modal-holder">
-            <label for="name" class="input-description">Ім'я</label>
+          <form class="contact-form">
+            <label for="name" class="contact-form-label">Ім'я</label>
             <div class="thumb">
-              <input type="text" id="name" class="field" />
+              <input type="text" id="name" class="contact-form-input" />
               <svg class="icon" width="18" height="18">
                 <use href="./images/icons.svg#icon-person-input"></use>
               </svg>
             </div>
-            <label for="tel" class="input-description">Телефон</label>
+            <label for="tel" class="contact-form-label">Телефон</label>
             <div class="thumb">
-              <input type="tel" id="tel" class="field" />
+              <input type="tel" id="tel" class="contact-form-input" />
               <svg class="icon" width="18" height="18">
                 <use href="./images/icons.svg#icon-phone-input"></use>
               </svg>
             </div>
-            <label for="email" class="input-description">Пошта</label>
+            <label for="email" class="contact-form-label">Пошта</label>
             <div class="thumb">
-              <input type="email" id="email" class="field" />
+              <input type="email" id="email" class="contact-form-input" />
               <svg class="icon" width="18" height="18">
                 <use href="./images/icons.svg#icon-email-input"></use>
               </svg>
             </div>
-            <label for="comment" class="input-description">Коментар</label>
-            <textarea name="comment" id="comment" placeholder="Введіть текст"></textarea>
+            <label for="comment" class="contact-form-label">Коментар</label>
+            <textarea
+              name="comment"
+              id="comment"
+              placeholder="Введіть текст"
+              class="contact-form-message"
+            ></textarea>
 
             <label for="pact" class="checkbox-description">
-              <input type="checkbox" name="pact" id="pact" /> Погоджуюся з розсилкою та приймаю
-              <a href="" target="_blank" class="pact-link">Умови договору</a>
+              <input type="checkbox" name="pact" id="pact" class="visualy-hidden checkbox" />
+              <span class="checkbox-icon"> </span>
+              <span>Погоджуюся з розсилкою та приймаю</span>
+              <a href="" target="blank" class="pact-link">Умови договору</a>
             </label>
             <button type="submit" class="button-submit">Відправити</button>
           </form>
@@ -485,6 +492,19 @@
               </a>
             </li>
           </ul>
+        </div>
+        <div class="sign-container">
+          <p class="sign-title">Підпишіться на розсилку</p>
+          <form class="sign-form">
+            <label class="sign-label"><input type="text" class="sign-input" /></label>
+            <span class="sign-description">E-mail</span>
+            <button type="submit" class="btn with-icon">
+              <span>Підписатися</span>
+              <svg class="button-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-send"></use>
+              </svg>
+            </button>
+          </form>
         </div>
       </div>
     </footer>
