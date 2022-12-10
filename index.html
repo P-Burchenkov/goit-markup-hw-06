@@ -63,7 +63,7 @@
       <!-- HERO -->
       <section class="hero">
         <h1 class="title">Ефективні рішення для вашого бізнесу</h1>
-        <button type="button" class="hero-button" data-modal-open>Замовити послугу</button>
+        <button type="button" class="btn hero-btn" data-modal-open>Замовити послугу</button>
       </section>
 
       <!-- VALUES -->
@@ -392,21 +392,21 @@
           <form class="contact-form">
             <label for="name" class="contact-form-label">Ім'я</label>
             <div class="thumb">
-              <input type="text" id="name" class="contact-form-input" />
+              <input type="text" id="name" required class="contact-form-input" />
               <svg class="icon" width="18" height="18">
                 <use href="./images/icons.svg#icon-person-input"></use>
               </svg>
             </div>
             <label for="tel" class="contact-form-label">Телефон</label>
             <div class="thumb">
-              <input type="tel" id="tel" class="contact-form-input" />
+              <input type="tel" id="tel" class="contact-form-input" required />
               <svg class="icon" width="18" height="18">
                 <use href="./images/icons.svg#icon-phone-input"></use>
               </svg>
             </div>
             <label for="email" class="contact-form-label">Пошта</label>
             <div class="thumb">
-              <input type="email" id="email" class="contact-form-input" />
+              <input type="email" id="email" class="contact-form-input" required />
               <svg class="icon" width="18" height="18">
                 <use href="./images/icons.svg#icon-email-input"></use>
               </svg>
@@ -420,12 +420,18 @@
             ></textarea>
 
             <label for="pact" class="checkbox-description">
-              <input type="checkbox" name="pact" id="pact" class="visualy-hidden checkbox" />
+              <input
+                type="checkbox"
+                name="pact"
+                id="pact"
+                class="visualy-hidden checkbox"
+                required
+              />
               <span class="checkbox-icon"> </span>
               <span>Погоджуюся з розсилкою та приймаю</span>
               <a href="" target="blank" class="pact-link">Умови договору</a>
             </label>
-            <button type="submit" class="button-submit">Відправити</button>
+            <button type="submit" class="btn btn-modal">Відправити</button>
           </form>
 
           <button class="close-button" data-modal-close>
@@ -496,8 +502,13 @@
         <div class="sign-container">
           <p class="sign-title">Підпишіться на розсилку</p>
           <form class="sign-form">
-            <label class="sign-label"><input type="text" class="sign-input" /></label>
-            <span class="sign-description">E-mail</span>
+            <label class="sign-label"
+              ><input type="text" class="sign-input" placeholder=" " /><span
+                class="sign-description"
+                >E-mail</span
+              ></label
+            >
+
             <button type="submit" class="btn with-icon">
               <span>Підписатися</span>
               <svg class="button-icon" width="24" height="24">
